@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Full Page Background Image</title>
+  <title>Full Page Background Image with Lato Fonts</title>
+  <!-- Import Lato font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <style>
     html, body {
       height: 100%;
       margin: 0;
       padding: 0;
+      font-family: 'Lato', Arial, sans-serif;
     }
     body {
       min-height: 100vh;
       min-width: 100vw;
-      background-image: url('cropped1.gif'); /* <-- Local image file */
+      background-image: url('cropped1.gif');
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
@@ -27,11 +30,22 @@
       font-size: 2em;
       text-shadow: 0 2px 8px #000;
     }
+    .lato-big {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 3em;
+      font-weight: 700;
+    }
+    .lato-small {
+      font-family: 'Lato', Arial, sans-serif;
+      font-size: 1em;
+      font-weight: 400;
+    }
   </style>
 </head>
 <body>
   <div class="content">
-    Your content goes here!
+    <div class="lato-big">This is big Lato text</div>
+    <div class="lato-small">This is small Lato text</div>
   </div>
 </body>
 </html>
